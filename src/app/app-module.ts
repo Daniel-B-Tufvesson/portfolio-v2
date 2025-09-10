@@ -6,11 +6,13 @@ import { App } from './app';
 import { HomeComponent } from './features/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { PageComponent } from './shared/page/page.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     App,
     HeaderComponent,
+    FooterComponent,
     PageComponent,
     HomeComponent
   ],

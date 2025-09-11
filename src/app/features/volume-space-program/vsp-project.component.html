@@ -1,5 +1,54 @@
 <app-page>
     <div class="content">
         <app-vsp-demo></app-vsp-demo>
+        <app-project-section title="VOLUME SPACE PROGRAM" [bigTitle]="true" videoPath="/assets/vsp/demo.mov">
+            <p>
+                This was a project for a web development course at Linköping University.
+                The goal of the project was for each student to create their own creative
+                but more or less useless input field. We were supposed to create something
+                akin to the <a target="_blank" href="https://www.boredpanda.com/funny-worst-input-fields/">these</a>.
+                Volume Space Program was my contribution.
+            </p>
+            <p>
+                The task here is to launch a tiny rocket into orbit around the planet. The 
+                rocket's distance from the planet determines the volume.
+            </p>
+            <p>
+                When developing the idea for this, I knew I wanted to do something fun
+                involving physics and gravity. It wasn't enough for it to be hard to use, 
+                it should also be enjoyable; easy to fail, but easy to try again.
+            </p>
+        </app-project-section>
+        <app-project-section title="ORBITAL MECHANICS" [mediaRight]="false" videoPath="/assets/vsp/stable orbit.mov">
+            <p>
+                The goal is essentially to achieve a stable orbit around the 
+                planet. While hard, this is possible.
+            </p>
+            <p>
+                I created the orbital mechanics from greatly simplifying Newton's 
+                law of gravity, essentially saying, objects closer each other 
+                attract each other more than those further away.
+            </p>
+        </app-project-section>
+        <app-project-section title="SPACE DEBRIS" videoPath="/assets/vsp/debris.mov">
+            <p>
+                Crashing the rocket drops debris into orbit. These follow the 
+                same orbital mechanics as the rocket.
+            </p>
+            <p>
+                After many crashes, space can become quite cluttered.
+            </p>
+            <p>
+                This was a final touch I added to give more depth to the 
+                orbital mechanics. While it's not just quite mesmerizing 
+                to watch, it also gives the player a sense that their actions 
+                have an impact on the game world.
+            </p>
+        </app-project-section>
+        <app-project-section title="AVAILABLE ON GITHUB">
+            <p>
+                The code is publicly available <a href="https://github.com/Daniel-B-Tufvesson/Volume-Space-Program">here</a> on my GitHub.
+            </p>
+        </app-project-section>
     </div>
 </app-page>

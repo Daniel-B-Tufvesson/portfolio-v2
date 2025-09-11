@@ -12,6 +12,7 @@ import { DataService } from './services/data.service';
 import { ProjectGridComponent } from './features/home/project-grid/projectgrid.component';
 import { VSPProjectPage } from './features/volume-space-program/vsp-project.component';
 import { VSPDemoComponent } from './features/volume-space-program/vsp-demo/vsp-demo.component';
+import { ProjectSectionComponent } from './shared/project-section/project-section.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { VSPDemoComponent } from './features/volume-space-program/vsp-demo/vsp-d
     AboutComponent,
     ProjectGridComponent,
     HomeComponent,
+    ProjectSectionComponent,
     VSPDemoComponent,
     VSPProjectPage
   ],

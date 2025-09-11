@@ -20,17 +20,17 @@ export class DataService {
         {
             name: 'Unearthed',
             description: 'Unearthed is about exploration, survival, crafting, mining, and most importantly automation! The game is set in a procedurally generated 2D tile world.',
-            imageURL: '/assets/unearthed-cell.jpeg'
+            imageURL: '/assets/home/unearthed-cell.jpeg'
         },
         {
             name: 'BONE-BREAKER',
             description: 'A variant of the classic Breakout game. In this version the player must break all the bones by bouncing around an angry-looking skull.',
-            imageURL: '/assets/bone-breaker cell.jpeg'
+            imageURL: '/assets/home/bone-breaker cell.jpeg'
         },
         {
             name: 'Volume Space Program',
             description: 'A fun but \'useless\' input field for controlling the audio volume. To set the volume, you must launch a tiny rocket into orbit. The height of the orbit then determines the volume.',
-            imageURL: '/assets/rsp-cell.jpeg'
+            imageURL: '/assets/home/rsp-cell.jpeg'
         }
     ];
 

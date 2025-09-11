@@ -7,6 +7,8 @@ import { HomeComponent } from './features/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { PageComponent } from './shared/page/page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AboutComponent } from './features/home/about/about.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     HeaderComponent,
     FooterComponent,
     PageComponent,
+    AboutComponent,
     HomeComponent
   ],
   imports: [
@@ -21,7 +24,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    DataService
   ],
   bootstrap: [App]
 })

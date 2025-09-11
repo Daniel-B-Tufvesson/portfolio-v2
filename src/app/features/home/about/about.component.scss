@@ -1,0 +1,33 @@
+:host {
+    padding: 20px;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.about > * {
+    flex: 1;
+}
+
+li {
+    padding: 5px;
+}

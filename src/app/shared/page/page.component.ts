@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-page',
@@ -9,7 +10,6 @@ import { Component, Input } from '@angular/core';
 export class PageComponent {
   @Input() title: string = '';
 
-  email = 'daniel.tufvesson@outlook.com';
-  linkedInURL = 'https://www.linkedin.com/in/daniel-tufvesson-a4541929a/';
-  githubURL = 'https://github.com/Daniel-B-Tufvesson';
+  constructor(public data: DataService) {
+  }
 }

@@ -1,6 +1,7 @@
-<app-page title="Home">
+<app-page>
     <div class="home-content">
         <app-about></app-about>
-        <app-about></app-about>
+        <app-project-grid title="Game Projects" [projects]="data.gameProjects"></app-project-grid>
+        <app-project-grid title="AI & NLP Projects" [projects]="data.aiProjects"></app-project-grid>
     </div>
 </app-page>

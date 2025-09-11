@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,6 @@ import { Component, signal } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  protected readonly title = signal('my-portfolio');
+
+  constructor(public data: DataService) {}
 }

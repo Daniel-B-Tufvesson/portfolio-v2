@@ -8,8 +8,6 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./page.component.scss']
 })
 export class PageComponent {
-  @Input() title: string = '';
-
   constructor(public data: DataService) {
   }
 }

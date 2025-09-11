@@ -9,6 +9,7 @@ import { PageComponent } from './shared/page/page.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './features/home/about/about.component';
 import { DataService } from './services/data.service';
+import { ProjectGridComponent } from './features/home/project-grid/projectgrid.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DataService } from './services/data.service';
     FooterComponent,
     PageComponent,
     AboutComponent,
+    ProjectGridComponent,
     HomeComponent
   ],
   imports: [

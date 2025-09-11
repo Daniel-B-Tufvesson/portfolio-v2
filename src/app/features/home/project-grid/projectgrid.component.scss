@@ -1,0 +1,38 @@
+:host {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    border: 1px solid gray;
+    box-shadow: gray 2px 2px 3px;
+    transition: box-shadow 100ms, scale 100ms;
+}
+
+.project-card:hover {
+    box-shadow: gray 8px 8px 12px;
+    scale: 1.01;
+    transition: box-shadow 100ms, scale 100ms;
+}
+
+.project-image {
+    min-width: 220px;
+    width: 220px;
+    height: 160px;
+    background-color: gray;
+    object-fit: cover;
+}

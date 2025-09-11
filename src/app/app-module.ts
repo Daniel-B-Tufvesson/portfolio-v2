@@ -1,4 +1,4 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
@@ -10,6 +10,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './features/home/about/about.component';
 import { DataService } from './services/data.service';
 import { ProjectGridComponent } from './features/home/project-grid/projectgrid.component';
+import { VSPProjectPage } from './features/volume-space-program/vsp-project.component';
+import { VSPDemoComponent } from './features/volume-space-program/vsp-demo/vsp-demo.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProjectGridComponent } from './features/home/project-grid/projectgrid.c
     PageComponent,
     AboutComponent,
     ProjectGridComponent,
-    HomeComponent
+    HomeComponent,
+    VSPDemoComponent,
+    VSPProjectPage
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,7 @@ import { ProjectGridComponent } from './features/home/project-grid/projectgrid.c
     provideBrowserGlobalErrorListeners(),
     DataService
   ],
-  bootstrap: [App]
+  bootstrap: [App],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

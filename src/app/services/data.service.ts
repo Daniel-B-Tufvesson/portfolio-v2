@@ -30,7 +30,8 @@ export class DataService {
         {
             name: 'Volume Space Program',
             description: 'A fun but \'useless\' input field for controlling the audio volume. To set the volume, you must launch a tiny rocket into orbit. The height of the orbit then determines the volume.',
-            imageURL: '/assets/home/rsp-cell.jpeg'
+            imageURL: '/assets/home/rsp-cell.jpeg',
+            routerLink: '/projects/vsp'
         }
     ];
 

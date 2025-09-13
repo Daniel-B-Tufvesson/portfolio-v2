@@ -1,0 +1,18 @@
+
+<div class="content">
+    <!-- Media -->
+    @if (videoURL) {
+        <video class="media" [src]="videoURL" autoplay="true" loop="true" muted="true"></video>
+    }
+    @else if (imageURL) {
+        <img [src]="imageURL" class="media">
+    }
+    @else {
+        <div class="media"></div>
+    }
+
+    <!-- Overlay -->
+    <div class="media-overlay">
+        <ng-content></ng-content>
+    </div>
+</div>

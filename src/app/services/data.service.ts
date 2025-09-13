@@ -20,7 +20,8 @@ export class DataService {
         {
             name: 'Unearthed',
             description: 'Unearthed is about exploration, survival, crafting, mining, and most importantly automation! The game is set in a procedurally generated 2D tile world.',
-            imageURL: '/assets/home/unearthed-cell.jpeg'
+            imageURL: '/assets/home/unearthed-cell.jpeg',
+            routerLink: '/projects/unearthed'
         },
         {
             name: 'BONE-BREAKER',

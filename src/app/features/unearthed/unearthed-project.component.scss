@@ -1,0 +1,33 @@
+.front-images {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.front-image-large {
+    height: 395px;
+}
+
+.front-images-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.front-images-small > img {
+    height: 186px;
+    object-fit: cover;
+}
+
+.media-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-media {
+    width: 100%;
+}

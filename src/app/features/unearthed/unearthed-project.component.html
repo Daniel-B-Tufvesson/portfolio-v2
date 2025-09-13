@@ -1,0 +1,215 @@
+<app-page>
+    <div class="content">
+        <div class="front-images">
+            <video class="front-image-large" src="/assets/unearthed/videos/ue clouds.mov" autoplay="true" loop="true" muted="true"></video>
+
+            <div class="front-images-small">
+                <img src="/assets/unearthed/images/ue drills.jpeg">
+                <img src="/assets/unearthed/images/ue alien capsule.jpeg">
+            </div>
+        </div>
+
+        <app-project-section titleText="Unearthed">
+            <p>
+                Unearthed is about exploration, survival, crafting, mining, 
+                and most importantly automation! The game is set in a 
+                procedurally generated 2D tile world. The player must collect resources 
+                in order to make machines that can process those resources. And from these,
+                the player can build further machines that collect even more resources. 
+            </p>
+            <p>
+                The project started in 2017 as a simple platformer game contained within 
+                a small world. Over the years, both my skills and ambitions grew, and as
+                well did the game. I have always loved games like Minecraft and Terraria, 
+                and when playing them I regularly contemplate how one would go about making 
+                such a game oneself. So it was only natural that I would try to implement
+                something similar myself.
+            </p>
+            <p>
+                The game is far from finished, and the development is currently put on 
+                hold. However, the game still has a lot of playable elements, and can
+                be quite enjoyable despite being unfinished.
+            </p>
+        </app-project-section>
+
+        <app-project-section titleText="EXPLORATION">
+            <p>
+                The world is huge, and the player can explore multiple kinds of environments
+                to find new resources — everything from lakes and mountains to deep caves and
+                crevices.
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue explore 1.mov">
+                    <h2>Exploring the Overworld</h2>
+                    <p>
+                        The overworld is green and lush. There are no real threats
+                        here and it is safe to explore.
+                    </p>
+                </app-media-with-overlay>
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue explore 2.mov">
+                    <h2>Exploring the Underworld</h2>
+                    <p>
+                        To collect more valuable resources the player must explore
+                        the underworld, which is dark and is where the monsters
+                        live.
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+
+        <app-project-section titleText="MINING">
+            <p>
+                Mining is the primary way to collect resources. This is done
+                with tools such as the pickaxe. There are many kinds of
+                resources, and the deeper one goes, the more abundant they
+                become.
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue mining 1.mov">
+                    <h2>Mining with Pickaxe</h2>
+                    <p>
+                        The player mines iron ore blocks using a pickaxe. The mined ore
+                        is dropped on the ground, which the player then can pick up.
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+
+        <app-project-section titleText="CRAFTING">
+            <p>
+                The collected resources can then be used for crafting new
+                and more efficient tools.  
+                Some items and tools can be crafted directly in the player's
+                inventory, while others require certain crafting-stations. 
+            </p>
+            <p>
+                The resources required for each item is displayed in the 
+                crafting menu. It also displays whether the player currently
+                has them in their inventory.
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue crafting 1.mov">
+                    <h2>Crafting Ladders</h2>
+                    <p>
+                        Ladders can be crafted from wooden sticks. And wooden sticks 
+                        can be crafted from wooden planks. Wooden planks are in turn
+                        crafted from raw wood logs, which are gathered from chopping
+                        down trees.
+                    </p>
+                    <p>
+                        Here the crafting is done at a standard Workbench.
+                    </p>
+                </app-media-with-overlay>
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue crafting 2.mov">
+                    <h2>Smelting Copper Ore</h2>
+                    <p>
+                        Copper ore (and other types of ore) can be smelted in
+                        a furnace. The furnace requires burnable fuel to operate,
+                        and in this case coal is used.
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+
+        <app-project-section titleText="AUTOMATION">
+            <p>
+                As the game progresses, more and more advanced items can be 
+                crafted, and these often require larger quantities of resources.
+                To keep up with this increasing demand, the player can automate
+                both the resource gathering and the crafting tasks. This is 
+                done by crafting certain machines and assembling them into 
+                factory production lines.
+            </p>
+            <p>
+                These machines require electricity in order to operate.
+                Electricity is generated with different kinds of electric
+                generators, for example, solar panels or windmills. These
+                generators can then be connected with cables to batteries
+                and machines.
+            </p>
+            <p>
+                The machines also require items and resources to craft new 
+                items. These items can be transported to and from the
+                machines using pneumatic tubes. Items can also be stored in
+                different storage containers when they are not being used.
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue automation 1.mov">
+                    <h2>Drilling Machines</h2>
+                    <p>
+                        Mining drills powered by electricity extract coal ore
+                        from an underground coal deposit. The coal is then transported
+                        through pneumatic tubes to fuel furnaces smelting iron ore.
+                    </p>
+                </app-media-with-overlay>
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue automation 2.mov">
+                    <h2>Ladder Production Line</h2>
+                    <p>
+                        Three Auto-Workbenches are connected together into a production
+                        line producing ladders from raw wood. The raw wood is loaded into
+                        a wooden crate by the player. It is then processed into wooden planks,
+                        which are then turned into wooden sticks. These sticks are then 
+                        assembled into ladders, which are then stored in another wooden
+                        crate.
+                    </p>
+                </app-media-with-overlay>
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue automation 3.mov">
+                    <h2>Solar Panels</h2>
+                    <p>
+                        Solar Panels are generating electricity which is then
+                        being stored in a battery. This energy is then used
+                        for powering machines.
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+
+        <app-project-section titleText="AI AGENTS">
+            <p>
+                The game has a number of AI agents, which can either be friendly
+                or hostile to the player. The sophistication of their behaviors 
+                varies from each kind of AI. Some are very simple, while others
+                have more complex and autonomous behaviors.
+            </p>
+            <p>
+                The more sophisticated agents use a <a href="https://en.wikipedia.org/w/index.php?title=Behavior_tree_(artificial_intelligence,_robotics_and_control)&oldid=1178252094">behavior tree</a> 
+                system that I implemented.
+                Essentially, any given behavior can be broken down into a set
+                of simpler behaviors. These in turn can be broken down again.
+                Eventually the behaviors become so simple they don't have to 
+                be broken down any more. In this way you can create complex
+                and sophisticated behaviors from very simple, mindless 
+                behaviors.
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" videoURL="/assets/unearthed/videos/ue ai agent 1.mov">
+                    <h2>A Patrolling Sentry</h2>
+                    <p>
+                        A sentry robot patrolling a small area, scanning for players. When
+                        detecting the player, it goes into attack mode and starts firing
+                        lasers. (This was recorded during development, so the lasers do no
+                        damage to the player.)
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+
+        <app-project-section titleText="PROCEDURAL WORLD GENERATION">
+            <p>
+                The structure of the world is procedurally generated using both
+                a standard randomness function and <a href="https://medium.com/@yvanscher/playing-with-perlin-noise-generating-realistic-archipelagos-b59f004d8401">octave Perlin noise</a>.
+                Everything from caves and ore deposits to plants and mountains
+                are generated in some way by using the two kinds of noise. 
+            </p>
+            <div class="media-container">
+                <app-media-with-overlay class="section-media" imageURL="/assets/unearthed/images/ue world gen.jpeg">
+                    <h2>Procedurally Generated Cave Systems</h2>
+                    <p>
+                        The caves, ore deposits and dirt/stone distributions
+                        are all generated using octave Perlin noise.
+                    </p>
+                </app-media-with-overlay>
+            </div>
+        </app-project-section>
+    </div>
+</app-page>

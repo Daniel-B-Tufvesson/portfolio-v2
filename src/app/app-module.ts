@@ -15,6 +15,8 @@ import { VSPDemoComponent } from './features/volume-space-program/vsp-demo/vsp-d
 import { ProjectSectionComponent } from './shared/project-section/project-section.component';
 import { BoneBreakerPage } from './features/bone-breaker/bone-breaker-project.component';
 import { BoneBreakerDemoComponent } from './features/bone-breaker/bone-breaker-demo/bone-breaker-demo.component';
+import { UnearthedProjectPage } from './features/unearthed/unearthed-project.component';
+import { MediaWithOverlayComponent } from './shared/media-with-overlay/media-with-overlay.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,12 @@ import { BoneBreakerDemoComponent } from './features/bone-breaker/bone-breaker-d
     ProjectGridComponent,
     HomeComponent,
     ProjectSectionComponent,
+    MediaWithOverlayComponent,
     VSPDemoComponent,
     VSPProjectPage,
     BoneBreakerDemoComponent,
-    BoneBreakerPage
+    BoneBreakerPage,
+    UnearthedProjectPage
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<p class="demo-text">Interactive demo</p>
+
+@if (isLoading) {
+    <div class="load-screen">
+        <div class="spinner"></div>
+        <p>Loading demo...</p>
+    </div>
+}
+<iframe src="https://daniel-b-tufvesson.github.io/BONE-BREAKER/" 
+        style="border:none;" width="800" height="600" (load)="onLoaded()"></iframe>
+

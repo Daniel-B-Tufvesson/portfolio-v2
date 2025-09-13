@@ -13,6 +13,8 @@ import { ProjectGridComponent } from './features/home/project-grid/projectgrid.c
 import { VSPProjectPage } from './features/volume-space-program/vsp-project.component';
 import { VSPDemoComponent } from './features/volume-space-program/vsp-demo/vsp-demo.component';
 import { ProjectSectionComponent } from './shared/project-section/project-section.component';
+import { BoneBreakerPage } from './features/bone-breaker/bone-breaker-project.component';
+import { BoneBreakerDemoComponent } from './features/bone-breaker/bone-breaker-demo/bone-breaker-demo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProjectSectionComponent } from './shared/project-section/project-sectio
     HomeComponent,
     ProjectSectionComponent,
     VSPDemoComponent,
-    VSPProjectPage
+    VSPProjectPage,
+    BoneBreakerDemoComponent,
+    BoneBreakerPage
   ],
   imports: [
     BrowserModule,

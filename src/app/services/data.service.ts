@@ -25,7 +25,8 @@ export class DataService {
         {
             name: 'BONE-BREAKER',
             description: 'A variant of the classic Breakout game. In this version the player must break all the bones by bouncing around an angry-looking skull.',
-            imageURL: '/assets/home/bone-breaker cell.jpeg'
+            imageURL: '/assets/home/bone-breaker cell.jpeg',
+            routerLink: '/projects/bone-breaker'
         },
         {
             name: 'Volume Space Program',

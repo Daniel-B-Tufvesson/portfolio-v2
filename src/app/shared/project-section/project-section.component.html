@@ -1,25 +1,27 @@
 <div class="section">
     @if (bigTitle) {
-        <h1>{{title}}</h1>
+        <h1>{{titleText}}</h1>
     }
     <div class="content" [ngClass]="contentOrderingClass()">
         <!-- Text content. -->
         <div>
             @if (!bigTitle) {
-                <h1>{{title}}</h1>
+                <h1>{{titleText}}</h1>
             }
             <ng-content></ng-content>
         </div>
 
         <!-- Display media. -->
-        @if (imagePath) {
-            <img [src]="imagePath" class="media">
-        }
-        @else if (videoPath) {
-            <video [src]="videoPath" class="media" autoplay="true" loop="true" muted="true"></video>
-        }
-        @else if (showDummyImage) {
-            <div class="media"></div>
-        }
+        <div>
+            @if (videoPath) {
+                <video [src]="videoPath" class="media" autoplay="true" loop="true" muted="true"></video>
+            }
+            @if (imagePath) {
+                <img [src]="imagePath" class="media">
+            }
+            @if (!videoPath && !imagePath && showDummyImage) {
+                <div class="media"></div>
+            }
+        </div>
     </div>
 </div>

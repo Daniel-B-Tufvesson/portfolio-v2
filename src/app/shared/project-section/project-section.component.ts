@@ -7,7 +7,7 @@ import { Component, computed, input, Input, InputSignal } from "@angular/core";
     styleUrl: './project-section.component.scss'
 })
 export class ProjectSectionComponent {
-    @Input({required: true}) title!: string;
+    @Input({required: true}) titleText!: string;
     @Input() imagePath?: string;
     @Input() videoPath?: string;
     @Input() showDummyImage = false;

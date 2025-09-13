@@ -1,5 +1,132 @@
 <app-page>
     <div class="content">
         <app-bone-breaker-demo></app-bone-breaker-demo>
+        <app-project-section titleText="BONE-BREAKER" [bigTitle]="true" videoPath="/assets/bone-breaker/videos/bb demo.mov">
+            <p>
+                This was a project for a web development course at Linköping University.
+                I created this together with my fellow student and friend Karin Stendahl.
+            </p>
+
+            <p>
+                The game is a variant of the classic Breakout game, where the player controls
+                a paddle, and must bounce a ball onto bricks which will then break. The game
+                is won when every brick is broken.
+            </p>
+
+            <p>
+                In our version, the player must break all the bones. The player must also 
+                avoid any falling broken bones. And instead of a ball, there is an angry-lookin 
+                skull bouncing around.
+            </p>
+
+            <p>
+                We knew we wanted to make a Breakout game, but we didn't have a particular theme
+                in mind at first. It was during one of our design meetings that we randomly joked
+                about "bone-breaker" being a funny name for the game. And from there, we quickly 
+                came up with the idea about the ball being a skull, the bricks being bones, and
+                it taking place in a hellish world. 
+            </p>
+        </app-project-section>
+        <app-project-section titleText="PADDLE HEALTH" [mediaRight]="false" 
+            videoPath="/assets/bone-breaker/videos/bb health.mov"
+            imagePath="/assets/bone-breaker/images/health bar.jpeg">
+            <p>
+                We added a health system to the paddle, due to the difficulty added 
+                by the falling broken bones. This was both to give the player a
+                second chance for any mistakes, as well as alleviating the problem
+                of "impossible situations", that is, situations where the skull and 
+                a falling bone fall to same place, forcing the player to either
+                lose the skull or get hit by a bone.
+            </p>
+            <p>
+                We also added a heart block, which drops a healing heart when broken.
+                The heart must then be caught with the paddle to restore one health-point.
+            </p>
+        </app-project-section>
+        <app-project-section titleText="MULTIPLE SKULLS" videoPath="/assets/bone-breaker/videos/bb multiple skulls 2.mov">
+            <p>
+                Breaking a certain skull block causes new skulls to spawn. 
+            </p>
+            <p>
+                Periodically having multiple skulls changes the intensity in
+                gamplay, and leads to more variation in playing experience.  
+            </p>
+
+            <p>
+                It's very hard to keep multiple skulls in play for an extended
+                period of time, as these skulls are easily lost. However, it's 
+                only when losing the final skull, that the paddle takes damage. 
+            </p>
+        </app-project-section>
+        <app-project-section titleText="FUN CHAOS" [mediaRight]="false"
+            videoPath="/assets/bone-breaker/videos/bb multiple skulls 1.mov">
+            <p>
+                The skull blocks can sometimes lead to a chain reaction of skulls
+                spawning. 
+            </p>
+            <p>
+                This adds an element of chaotic unpredictability, as these chain
+                reactions can quickly lead to either loss or victory.
+            </p>
+            <p>
+                Personally, I find these moments to be the highlights when playing
+                the game, as I always look for opportunities to trigger these
+                chain reactions.
+            </p>
+        </app-project-section>
+        <app-project-section titleText="CODE DESIGN">
+            <p>
+                Our two main principles regarding the code design was scalability
+                and reusability.
+            </p>
+            <p>
+                Scalability in the sense that it should be easy to add new things, 
+                such as new objects or new game mechanics. And to do this without
+                having to change much of the already existing code. This meant 
+                that we encapsulated much of the behavior of the individual game
+                objects to their respective classes.
+            </p>
+            <p>
+                And reusability in the sense that we don't want to write the same
+                code twice. For the game objects, this meant that much behavior
+                could be inherited from superclasses. For example, the skull block
+                and heart block inherits most of their behavior from the bone class.
+                This can be seen in the class diagram below depicting the inheritance
+                of all the game objects in the game.
+            </p>
+            <img class="bb-class-diagram" src="/assets/bone-breaker/images/bb go class diagram.jpeg">
+        </app-project-section>
+        <app-project-section titleText="SPRITE DESIGN">
+            <p>
+                We envisioned the game's graphics to consist of pixelated sprites, 
+                giving the game a charming look and feel, despite the game's 
+                fairly edgy theme.
+            </p>
+            <p>
+                The sprites were created by me, and as a basis I used some sprites 
+                from some of my earlier games. 
+            </p>
+            <p>
+                For the hellish background, however, I used generative AI
+                to create. I prompted it to generate a "hellish landscape with
+                lava set in a cave". I then blurred it and altered its hue to
+                make it more suitable as a background, as to make the sprites 
+                "pop out" more, and to minimize background cluttering which would
+                only lead to unnecessary cognitive load on the player.  
+            </p>
+            <div class="sprites">
+                <img class="sprite-img" src="/assets/bone-breaker/images/ball skull.png" alt="skull sprite">
+                <img class="sprite-img" src="/assets/bone-breaker/images/brick bone.png" alt="bone sprite">
+                <img class="sprite-img" src="/assets/bone-breaker/images/broken brick bone.png" alt="broken bone sprite">
+                <img class="sprite-img" src="/assets/bone-breaker/images/heart.png" alt="heart sprite">
+                <img class="sprite-img" src="/assets/bone-breaker/images/brick health.png" alt="health block sprite">
+                <img class="sprite-img" src="/assets/bone-breaker/images/brick ball spawner.png" alt="skull block sprite">
+            </div>
+        </app-project-section>
+        <app-project-section titleText="AVAILABLE ON GITHUB">
+            <p>
+                The code is publicly available <a href="https://github.com/Daniel-B-Tufvesson/BONE-BREAKER">here</a> on my GitHub.
+            </p>
+        </app-project-section>
     </div>
 </app-page>

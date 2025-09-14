@@ -20,19 +20,19 @@ export class DataService {
         {
             name: 'Unearthed',
             description: 'Unearthed is about exploration, survival, crafting, mining, and most importantly automation! The game is set in a procedurally generated 2D tile world.',
-            imageURL: '/assets/home/unearthed-cell.jpeg',
+            imageURL: 'assets/home/unearthed-cell.jpeg',
             routerLink: '/projects/unearthed'
         },
         {
             name: 'BONE-BREAKER',
             description: 'A variant of the classic Breakout game. In this version the player must break all the bones by bouncing around an angry-looking skull.',
-            imageURL: '/assets/home/bone-breaker cell.jpeg',
+            imageURL: 'assets/home/bone-breaker cell.jpeg',
             routerLink: '/projects/bone-breaker'
         },
         {
             name: 'Volume Space Program',
             description: 'A fun but \'useless\' input field for controlling the audio volume. To set the volume, you must launch a tiny rocket into orbit. The height of the orbit then determines the volume.',
-            imageURL: '/assets/home/rsp-cell.jpeg',
+            imageURL: 'assets/home/rsp-cell.jpeg',
             routerLink: '/projects/vsp'
         }
     ];
@@ -43,13 +43,13 @@ export class DataService {
             description: `Automatically classify speech acts in Swedish sentences.
                           This is my Bachelor's thesis in cognitive science.`,
             routerLink: '/projects/bachelors-thesis',
-            imageURL: '/assets/home/BERT classifier.png'
+            imageURL: 'assets/home/BERT classifier.png'
         },
         {
             name: 'Perceptron POS Tagger',
             description: "A reimplentation of a multi-class perceptron for part-of-speech tagging words in Swedish sentences.",
             urlLink: 'https://github.com/Daniel-B-Tufvesson/perceptron-pos-tagger',
-            imageURL: '/assets/home/POS Perceptron.png'
+            imageURL: 'assets/home/POS Perceptron.png'
         },
         {
             name: 'LSA Coh-Metrix with SBERT',
@@ -57,7 +57,7 @@ export class DataService {
                           This was part of a larger research project for a course
                           in applied cognitive science.`,
             urlLink: 'https://github.com/Daniel-B-Tufvesson/lsa-coh-metrix',
-            imageURL:'/assets/home/embeddings.png'
+            imageURL:'assets/home/embeddings.png'
         }
     ];
 }

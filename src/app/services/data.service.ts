@@ -39,6 +39,13 @@ export class DataService {
 
     public readonly aiProjects: ProjectData[] = [
         {
+            name: 'Speech Act Classification',
+            description: `Automatically classify speech acts in Swedish sentences.
+                          This is my Bachelor's thesis in cognitive science.`,
+            routerLink: '/projects/bachelors-thesis',
+            imageURL: '/assets/home/BERT classifier.png'
+        },
+        {
             name: 'Perceptron POS Tagger',
             description: "A reimplentation of a multi-class perceptron for part-of-speech tagging words in Swedish sentences.",
             urlLink: 'https://github.com/Daniel-B-Tufvesson/perceptron-pos-tagger',

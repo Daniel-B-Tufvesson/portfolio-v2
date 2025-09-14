@@ -1,0 +1,82 @@
+.content {
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.project-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-heading-title {
+    font-size: 30pt;
+    font-weight: lighter;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+
+    p, li {
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 25px;
+        font-size: 13pt;
+    }
+
+    h2 {
+        font-size: 30pt;
+        font-weight: lighter;
+    }
+    
+    h3 {
+        font-size: 17pt;
+        font-weight: lighter;
+    }
+}
+
+li {
+    padding: 10px;
+}
+
+.project-section {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.bert-classif {
+    align-self: center;
+    width: 600px;
+    height: auto;
+}
+
+.anno-tool {
+    align-self: center;
+    width: 600px;
+    height: auto;
+}
+
+.rule {
+    align-self: center;
+}
+
+.eval-matrices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.eval-matrices p {
+    text-align: center;
+    font-size: 11pt;
+    padding-top: 10pt;
+}
+
+.eval-matrices img {
+    width: 300px;
+    height: auto;
+}

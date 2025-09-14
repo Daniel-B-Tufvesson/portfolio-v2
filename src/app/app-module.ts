@@ -17,6 +17,7 @@ import { BoneBreakerPage } from './features/bone-breaker/bone-breaker-project.co
 import { BoneBreakerDemoComponent } from './features/bone-breaker/bone-breaker-demo/bone-breaker-demo.component';
 import { UnearthedProjectPage } from './features/unearthed/unearthed-project.component';
 import { MediaWithOverlayComponent } from './shared/media-with-overlay/media-with-overlay.component';
+import { BachelorsThesisPage } from './features/bachelors-thesis/bachelors-thesis.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MediaWithOverlayComponent } from './shared/media-with-overlay/media-wit
     VSPProjectPage,
     BoneBreakerDemoComponent,
     BoneBreakerPage,
-    UnearthedProjectPage
+    UnearthedProjectPage,
+    BachelorsThesisPage
   ],
   imports: [
     BrowserModule,

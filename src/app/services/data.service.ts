@@ -41,7 +41,16 @@ export class DataService {
         {
             name: 'Perceptron POS Tagger',
             description: "A reimplentation of a multi-class perceptron for part-of-speech tagging words in Swedish sentences.",
-            urlLink: 'https://github.com/Daniel-B-Tufvesson/perceptron-pos-tagger'
+            urlLink: 'https://github.com/Daniel-B-Tufvesson/perceptron-pos-tagger',
+            imageURL: '/assets/home/POS Perceptron.png'
+        },
+        {
+            name: 'LSA Coh-Metrix with SBERT',
+            description: `Latent Semantic Analysis using a Swedish Sentence-BERT model.
+                          This was part of a larger research project for a course
+                          in applied cognitive science.`,
+            urlLink: 'https://github.com/Daniel-B-Tufvesson/lsa-coh-metrix',
+            imageURL:'/assets/home/embeddings.png'
         }
     ];
 }
